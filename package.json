@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "<git repositoy>"
+    "url": "https://github.com/rubixibuc/rerender.git"
   },
   "keywords": [
     "react",
