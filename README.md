@@ -11,7 +11,7 @@ import _ from 'lodash';
 
 const component = () => (
     <div>
-      {_.map(items, (item) => <span>{item.name}</soan>)}
+      {_.map(items, (item) => <span>{item.name}</span>)}
     </div>
     );
 ```
