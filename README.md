@@ -46,3 +46,5 @@ This library is under active development and more utiltiy components will be dev
 ```jsx harmony
 <R.Reduce initial={any} items={array} reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => any}>any => node</R.Reduce>
 ```
+
+**Composing these components is the whole idea! More are coming!**
