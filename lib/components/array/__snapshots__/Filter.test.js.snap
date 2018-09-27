@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render filtered items is when items is not empty 1`] = `
+<div>
+  2
+</div>
+`;
+
+exports[`should render nothing when items is empty 1`] = `<div />`;
+
+exports[`should render nothing when items is null 1`] = `null`;
+
+exports[`should render nothing when items is undefined 1`] = `null`;
