@@ -38,13 +38,25 @@ This library is under active development and more utiltiy components will be dev
 #### API
 
 ```jsx harmony
-<R.Map items={array}>{(value: any, index: number, items: array) => node}</R.Map> 
+<R.Map 
+  items={array}>
+    {(value: any, index: number, items: array) => node}
+</R.Map> 
 ```
 ```jsx harmony
-<R.Filter filter={(value: any, index: number, items: array) => bool} items={array}>{array => node}</R.Filter>
+<R.Filter 
+  filter={(value: any, index: number, items: array) => bool} 
+  items={array}>
+    {array => node}
+</R.Filter>
 ```
 ```jsx harmony
-<R.Reduce initial={any} items={array} reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => any}>any => node</R.Reduce>
+<R.Reduce 
+  initial={any} 
+  items={array} 
+  reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => any}>
+    {any => node}
+</R.Reduce>
 ```
 
 **Composing these components is the whole idea! More are coming!**
