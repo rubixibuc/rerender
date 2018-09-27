@@ -1,3 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render child for each item in items 1`] = `
+Array [
+  <div>
+    1
+  </div>,
+  <div>
+    2
+  </div>,
+]
+`;
+
+exports[`should render nothing when items is empty 1`] = `null`;
+
+exports[`should render nothing when items is null 1`] = `null`;
+
 exports[`should render nothing when items is undefined 1`] = `null`;
