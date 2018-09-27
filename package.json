@@ -1,0 +1,38 @@
+{
+  "name": "rerender",
+  "version": "1.0.0",
+  "description": "React utiltiy component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "prettier": "prettier --write './lib/**/*.js' webpack.config.js",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<git repositoy>"
+  },
+  "keywords": [
+    "react",
+    "utitliy",
+    "component",
+    "library"
+  ],
+  "author": "rubixibuc",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.2",
+    "jest": "^23.6.0",
+    "react": "^16.5.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
+}
