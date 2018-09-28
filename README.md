@@ -29,13 +29,13 @@ const component = () => (
 );
 ```
 
-#### Reasoning
+### Reasoning
 
 HOCs should not be used for every problem and neither should render props. Render props are best suited for pure transformations in the ui while HOCs are best suited for container logic. High order container components would be a more appropriate name for them.
 
 This library is under active development and more utility components will be developed. Currently a few have been releases to exemplify the pattern.
 
-#### API
+### API
 
 ```jsx harmony
 <R.Map 
