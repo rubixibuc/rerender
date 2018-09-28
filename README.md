@@ -66,7 +66,6 @@ This library is under active development and more utility components will be dev
 ```jsx harmony
 <Branch condition={bool}>
   // Can use any combination of True, Both, or False child elements
-
   <True>{node}</True>
   <Both>{node}<True>
   <False>{node}</False>
