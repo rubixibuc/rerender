@@ -7,6 +7,4 @@ Array [
 ]
 `;
 
-exports[`should render nothing when children are null 1`] = `null`;
-
 exports[`should render nothing when children are undefined 1`] = `null`;
