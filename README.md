@@ -40,12 +40,16 @@ This library is under active development and more utility components will be dev
 #### Arrays
 
 ```jsx harmony
+import * as R from 'rerender';
+
 <R.Map 
   items={array}>
     {(element: any, index: number, items: array) => node}
 </R.Map> 
 ```
 ```jsx harmony
+import * as R from 'rerender';
+
 <R.Filter 
   filter={(element: any, index: number, items: array) => bool} 
   items={array}>
@@ -53,6 +57,8 @@ This library is under active development and more utility components will be dev
 </R.Filter>
 ```
 ```jsx harmony
+import * as R from 'rerender';
+
 <R.Reduce 
   initial={any = {}} 
   items={array} 
@@ -64,15 +70,17 @@ This library is under active development and more utility components will be dev
 #### Logic
 
 ```jsx harmony
+import * as R from 'rerender';
+
 // Can use any combination of True, Both, or False child elements
 
-<Branch condition={bool}>
-  <True>{node}</True>
-  <Both>{node}</Both>
-  <False>{node}</False>
-  <Both>{node}</Both>
-  <False>{node}</False>
-  <True>{node}</True>  
+<R.Branch condition={bool}>
+  <R.True>{node}</R.True>
+  <R.Both>{node}</R.Both>
+  <R.False>{node}</R.False>
+  <R.Both>{node}</R.Both>
+  <R.False>{node}</R.False>
+  <R.True>{node}</R.True>  
 </Branch>
 ```
 
