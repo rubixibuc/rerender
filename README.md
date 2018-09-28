@@ -35,7 +35,7 @@ HOCs should not be used for every problem and neither should render props. Rende
 
 This library is under active development and more utility components will be developed. Currently a few have been releases to exemplify the pattern.
 
-### API
+## API
 
 ```jsx harmony
 <R.Map 
