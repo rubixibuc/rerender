@@ -37,6 +37,8 @@ This library is under active development and more utility components will be dev
 
 ## API
 
+#### Arrays
+
 ```jsx harmony
 <R.Map 
   items={array}>
@@ -57,6 +59,14 @@ This library is under active development and more utility components will be dev
   reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => accumulator: any}>
     {any => node}
 </R.Reduce>
+```
+
+#### Logic
+
+```jsx harmony
+<Branch condition={void => bool}>
+  <
+</Branch>
 ```
 
 **Composing these components is the whole idea! More are coming!**
