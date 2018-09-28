@@ -7,25 +7,27 @@
 ##### Instead of...
 
 ```jsx harmony
+import React from 'react'
 import _ from 'lodash';
 
 const component = ({ items }) => (
-    <div>
+    <React.Fragment>
       {_.map(items, (item) => <span>{item.name}</span>)}
-    </div>
+    </React.Fragment>
 );
 ```
 ##### Something like this...
 
 ```jsx harmony
+import React from 'react';
 import * as R from 'rerender';
 
 const component = ({ items }) => (
-    <div>
+    <React.Fragment>
       <R.Map items={items}>
-        {item => <span>{item}</span>}
+          {item => <span>{item}</span>}
       </R.Map>
-    </div>
+    </React.Fragment>
 );
 ```
 
@@ -75,10 +77,17 @@ This library is under active development and more utility components will be dev
 *Can use any combination and any number of True, Both, or False child elements*
 
 ```jsx harmony
-<R.Branch condition={bool}>
-  <R.True>{node}</R.True>
-  <R.False>{node}</R.False>
-  <R.Both>{node}</R.Both>
+<R.Branch 
+  condition={bool}>
+    <R.True>
+      {node}
+    </R.True>
+    <R.False>
+      {node}
+    </R.False>
+    <R.Both>
+      {node}
+    </R.Both>
 </R.Branch>
 ```
 
