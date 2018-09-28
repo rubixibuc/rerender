@@ -2,7 +2,7 @@
   "name": "@rubixibuc/rerender",
   "version": "1.0.0",
   "description": "React utiltiy component library",
-  "main": "index.js",
+  "main": "dist/rerender.js",
   "scripts": {
     "test": "jest --coverage",
     "prettier": "prettier --write './lib/**/*.js' webpack.config.js",
@@ -38,5 +38,6 @@
   },
   "peerDependencies": {
     "react": "^16.5.2"
-  }
+  },
+  "files": ["dist/rerender.js"]
 }
