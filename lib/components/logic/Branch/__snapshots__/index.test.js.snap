@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render False and Both child components when condition is False 1`] = `
+Array [
+  "true",
+  "both",
+]
+`;
+
+exports[`should render True and Both child components when condition is true 1`] = `
+Array [
+  "true",
+  "both",
+]
+`;
+
 exports[`should render all True child components when condition is true 1`] = `
 Array [
   <div>
