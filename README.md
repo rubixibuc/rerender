@@ -52,7 +52,7 @@ This library is under active development and more utility components will be dev
 ```
 ```jsx harmony
 <R.Reduce 
-  initial={any} 
+  initial={any = {}} 
   items={array} 
   reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => accumulator: any}>
     {any => node}

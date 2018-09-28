@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should all True child components when condition is true 1`] = `
+Array [
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+]
+`;
