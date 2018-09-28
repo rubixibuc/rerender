@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should all True child components when condition is true 1`] = `
+exports[`should render all True child components when condition is true 1`] = `
 Array [
   <div>
     true
@@ -16,3 +16,24 @@ Array [
   </div>,
 ]
 `;
+
+exports[`should render all false child components when condition is false 1`] = `
+Array [
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+]
+`;
+
+exports[`should render nothing when Branch contains no True or False children and condition is false 1`] = `null`;
+
+exports[`should render nothing when Branch contains no True or False children and condition is true 1`] = `null`;
