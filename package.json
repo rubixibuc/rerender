@@ -1,6 +1,6 @@
 {
   "name": "@rubixibuc/rerender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React utiltiy component library",
   "main": "dist/rerender.js",
   "scripts": {
@@ -39,5 +39,7 @@
   "peerDependencies": {
     "react": "^16.5.2"
   },
-  "files": ["dist/rerender.js"]
+  "files": [
+    "dist/rerender.js"
+  ]
 }
