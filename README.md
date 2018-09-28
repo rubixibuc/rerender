@@ -40,12 +40,12 @@ This library is under active development and more utility components will be dev
 ```jsx harmony
 <R.Map 
   items={array}>
-    {(value: any, index: number, items: array) => node}
+    {(element: any, index: number, items: array) => node}
 </R.Map> 
 ```
 ```jsx harmony
 <R.Filter 
-  filter={(value: any, index: number, items: array) => bool} 
+  filter={(element: any, index: number, items: array) => bool} 
   items={array}>
     {array => node}
 </R.Filter>
