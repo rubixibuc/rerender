@@ -72,17 +72,28 @@ This library is under active development and more utility components will be dev
 
 ##### Branch
 
-*Can use any combination of True, Both, or False child elements*
+*Can use any combination and any number of True, Both, or False child elements*
 
 ```jsx harmony
 <R.Branch condition={bool}>
   <R.True>{node}</R.True>
-  <R.Both>{node}</R.Both>
   <R.False>{node}</R.False>
   <R.Both>{node}</R.Both>
-  <R.False>{node}</R.False>
-  <R.True>{node}</R.True>  
 </R.Branch>
+```
+
+##### Match
+
+*Expressions can be matched multiple times*
+
+```jsx harmony
+<R.Match 
+  expression={number | string | object | array}>
+  <R.Test 
+    value={number | string | object | array}>
+      {node}
+  </R.Test>
+</R.Match>
 ```
 
 **Composing these components is the whole idea! More are coming!**
