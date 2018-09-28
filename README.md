@@ -9,7 +9,7 @@
 ```jsx harmony
 import _ from 'lodash';
 
-const component = () => (
+const component = ({ items }) => (
     <div>
       {_.map(items, (item) => <span>{item.name}</span>)}
     </div>
@@ -20,7 +20,7 @@ const component = () => (
 ```jsx harmony
 import R from 'rerender';
 
-const component = () => (
+const component = ({ items }) => (
     <div>
       <R.Map items={items}>
         {item => <span>{item}</span>}
