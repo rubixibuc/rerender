@@ -2,7 +2,7 @@
 
 exports[`should render False and Both child components when condition is False 1`] = `
 Array [
-  "true",
+  "false",
   "both",
 ]
 `;
