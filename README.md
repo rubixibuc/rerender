@@ -18,7 +18,7 @@ const component = ({ items }) => (
 ##### Something like this...
 
 ```jsx harmony
-import R from 'rerender';
+import * as R from 'rerender';
 
 const component = ({ items }) => (
     <div>
