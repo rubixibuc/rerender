@@ -73,7 +73,7 @@ This library is under active development and more utility components will be dev
   <R.Both>{node}</R.Both>
   <R.False>{node}</R.False>
   <R.True>{node}</R.True>  
-</Branch>
+</R.Branch>
 ```
 
 **Composing these components is the whole idea! More are coming!**
