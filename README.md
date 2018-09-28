@@ -2,7 +2,7 @@
 
 ## React utility component library
 
-### Rerender contains a set of pure components intent on replacing libraries such as lodash while rendering. It might be useful to think of it as recompose for render props
+### Rerender is a set of pure components intent on replacing libraries such as lodash during rendering. It might be useful to think of it as recompose for render props.
 
 #### Instead of...
 
@@ -13,7 +13,7 @@ const component = () => (
     <div>
       {_.map(items, (item) => <span>{item.name}</span>)}
     </div>
-    );
+);
 ```
 #### Something like this...
 
@@ -26,14 +26,14 @@ const component = () => (
         {item => <span>{item}</span>}
       </R.Map>
     </div>
-    );
+);
 ```
 
 #### Reasoning
 
-HOCs should not be used for every problem and neither should render props. Render props are best suited for pure transformations in the ui while HOCs are built suited for container like logic. High order container component would be a more appropriate name for them.
+HOCs should not be used for every problem and neither should render props. Render props are best suited for pure transformations in the ui while HOCs are best suited for container logic. High order container components would be a more appropriate name for them.
 
-This library is under active development and more utiltiy components will be developed. Currently a few have been release to exemplify the pattern.
+This library is under active development and more utility components will be developed. Currently a few have been releases to exemplify the pattern.
 
 #### API
 
@@ -54,7 +54,7 @@ This library is under active development and more utiltiy components will be dev
 <R.Reduce 
   initial={any} 
   items={array} 
-  reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => any}>
+  reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => accumulator: any}>
     {any => node}
 </R.Reduce>
 ```
