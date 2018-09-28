@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Tests with matching value 1`] = `
+Array [
+  "4",
+  "4",
+]
+`;
+
+exports[`should render nothing when children are null 1`] = `null`;
+
+exports[`should render nothing when children are undefined 1`] = `null`;
