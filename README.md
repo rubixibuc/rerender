@@ -40,16 +40,12 @@ This library is under active development and more utility components will be dev
 #### Arrays
 
 ```jsx harmony
-import * as R from 'rerender';
-
 <R.Map 
   items={array}>
     {(element: any, index: number, items: array) => node}
 </R.Map> 
 ```
 ```jsx harmony
-import * as R from 'rerender';
-
 <R.Filter 
   filter={(element: any, index: number, items: array) => bool} 
   items={array}>
@@ -57,8 +53,6 @@ import * as R from 'rerender';
 </R.Filter>
 ```
 ```jsx harmony
-import * as R from 'rerender';
-
 <R.Reduce 
   initial={any = {}} 
   items={array} 
@@ -70,8 +64,6 @@ import * as R from 'rerender';
 #### Logic
 
 ```jsx harmony
-import * as R from 'rerender';
-
 // Can use any combination of True, Both, or False child elements
 
 <R.Branch condition={bool}>
