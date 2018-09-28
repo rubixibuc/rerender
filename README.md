@@ -64,8 +64,15 @@ This library is under active development and more utility components will be dev
 #### Logic
 
 ```jsx harmony
-<Branch condition={void => bool}>
-  <
+<Branch condition={bool}>
+  // Can use any combination of True, Both, or False child elements
+
+  <True>{node}</True>
+  <Both>{node}<True>
+  <False>{node}</False>
+  <Both>{node}<True>
+  <False>{node}</False>
+  <True>{node}</True>  
 </Branch>
 ```
 
