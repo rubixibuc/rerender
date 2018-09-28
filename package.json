@@ -1,5 +1,5 @@
 {
-  "name": "rerender",
+  "name": "@rubixibuc/rerender",
   "version": "1.0.0",
   "description": "React utiltiy component library",
   "main": "index.js",
