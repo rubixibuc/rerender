@@ -68,7 +68,7 @@ This library is under active development and more utility components will be dev
 
 <Branch condition={bool}>
   <True>{node}</True>
-  <Both>{node}<Both>
+  <Both>{node}</Both>
   <False>{node}</False>
   <Both>{node}</Both>
   <False>{node}</False>
