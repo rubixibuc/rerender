@@ -1,10 +1,10 @@
-# rerender
-
+# Rerender
+ 
 ## React utility component library
 
-### Rerender is a set of pure components intent on replacing libraries such as lodash during rendering. It might be useful to think of it as recompose for render props.
+> Rerender is a set of pure components intent on replacing libraries such as lodash during rendering. It might be useful to think of it as recompose for render props.
 
-#### Instead of...
+##### Instead of...
 
 ```jsx harmony
 import _ from 'lodash';
@@ -15,7 +15,7 @@ const component = ({ items }) => (
     </div>
 );
 ```
-#### Something like this...
+##### Something like this...
 
 ```jsx harmony
 import R from 'rerender';
@@ -29,7 +29,7 @@ const component = ({ items }) => (
 );
 ```
 
-#### Reasoning
+##### Reasoning
 
 HOCs should not be used for every problem and neither should render props. Render props are best suited for pure transformations in the ui while HOCs are best suited for container logic. High order container components would be a more appropriate name for them.
 
