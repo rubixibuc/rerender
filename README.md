@@ -37,7 +37,7 @@ This library is under active development and more utility components will be dev
 
 ## API
 
-#### Arrays
+### Arrays
 
 ##### Map
 
@@ -68,7 +68,7 @@ This library is under active development and more utility components will be dev
 </R.Reduce>
 ```
 
-#### Logic
+### Logic
 
 ##### Branch
 
