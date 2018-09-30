@@ -19,7 +19,7 @@
     "library"
   ],
   "author": "rubixibuc",
-  "license": "ISC",
+  "license": "Unlicense",
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
