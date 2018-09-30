@@ -65,10 +65,7 @@ This library is under active development and more utility components will be dev
 <R.Reduce 
   initial={any = {}} 
   items={array} 
-  reducer={(accumulator: any,
-            currentValue: any,
-            currentIndex: number,
-            items: array) => accumulator: any}>
+  reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => accumulator: any}>
     {any => node}
 </R.Reduce>
 ```
