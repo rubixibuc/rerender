@@ -7,4 +7,6 @@ Array [
 ]
 `;
 
+exports[`should render Tests with matching value when value is function 1`] = `"4"`;
+
 exports[`should render nothing when children are undefined 1`] = `null`;
