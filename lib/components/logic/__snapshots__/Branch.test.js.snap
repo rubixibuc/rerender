@@ -7,7 +7,9 @@ Array [
 ]
 `;
 
-exports[`should render first (2) Path with true condition in Branch 1`] = `"2"`;
+exports[`should render first Path (2) with function condition returning true in Branch 1`] = `"2"`;
+
+exports[`should render first Path (2) with true condition in Branch 1`] = `"2"`;
 
 exports[`should render no Paths because none match 1`] = `null`;
 
