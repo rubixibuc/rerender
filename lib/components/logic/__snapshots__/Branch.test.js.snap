@@ -18,3 +18,5 @@ exports[`should render no Paths because none match when taking every path 1`] = 
 exports[`should render nothing when children are undefined 1`] = `null`;
 
 exports[`should render nothing when children are undefined and taking every path 1`] = `null`;
+
+exports[`should render path with no condition because all other Path conditions are false 1`] = `"3"`;
