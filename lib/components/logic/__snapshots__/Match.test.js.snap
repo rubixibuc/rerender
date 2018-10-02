@@ -1,10 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Tests with matching value 1`] = `
+exports[`should render Tests with matching value when value is function 1`] = `"4"`;
+
+exports[`should render all Tests (1, 4) with matching value 1`] = `
 Array [
-  "4",
+  "1",
   "4",
 ]
 `;
 
+exports[`should render matching Test (1) when Match expression is function 1`] = `"1"`;
+
 exports[`should render nothing when children are undefined 1`] = `null`;
+
+exports[`should render only first Test (1) with matching value 1`] = `"1"`;
