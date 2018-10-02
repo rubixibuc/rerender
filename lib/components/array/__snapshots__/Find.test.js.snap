@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render first item that matches 1`] = `
+<div>
+  2
+</div>
+`;
+
+exports[`should render nothing if no items match 1`] = `null`;
+
+exports[`should render nothing when items is empty 1`] = `null`;
+
+exports[`should render nothing when items is null 1`] = `null`;
+
+exports[`should render nothing when items is undefined 1`] = `null`;
