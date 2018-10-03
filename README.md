@@ -73,8 +73,10 @@ This library is under active development and more utility components will be dev
 ##### Find
 
 ```jsx harmony
-<R.Find>
-
+<R.Find
+  items={array}
+  predicate={func}>
+  {any => node}
 </R.Find>
 ```
 
@@ -82,32 +84,30 @@ This library is under active development and more utility components will be dev
 
 ##### Branch
 
-*Can use any combination and any number of True, Both, or False child elements*
+*If first is true will only render first Path with truthy condition*
+*If condition prop is not set will render regardless. Equivalent to else block in if statement*
 
 ```jsx harmony
 <R.Branch 
-  condition={bool}>
-    <R.True>
-      {node}
-    </R.True>
-    <R.False>
-      {node}
-    </R.False>
-    <R.Both>
-      {node}
-    </R.Both>
+  first={bool = true}>
+  <Path
+    condition={bool | (any => bool) | undefined}>
+    {node}
+  </Path> 
 </R.Branch>
 ```
 
 ##### Match
 
-*Expressions can be matched multiple times*
+*If first is true will only render first Test with value matching expression*
 
 ```jsx harmony
 <R.Match 
-  expression={number | string | object | array}>
+  expression={bool | number | string | object | array}
+  first={bool = true}
+  matcher={(expression, value) => bool = (expression, value) => expresion === value}>
   <R.Test 
-    value={number | string | object | array}>
+    value={bool | number | string | object | array}>
       {node}
   </R.Test>
 </R.Match>
