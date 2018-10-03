@@ -85,6 +85,7 @@ This library is under active development and more utility components will be dev
 ##### Branch
 
 *If first is true will only render first Path with truthy condition*
+
 *If condition prop is not set will render regardless. Equivalent to else block in if statement*
 
 ```jsx harmony
