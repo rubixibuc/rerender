@@ -11,6 +11,6 @@ Array [
 
 exports[`should render matching Test (1) when Match expression is function 1`] = `"1"`;
 
-exports[`should render nothing when children are undefined 1`] = `null`;
+exports[`should render matching Test (2) when Match expression is null 1`] = `"2"`;
 
 exports[`should render only first Test (1) with matching value 1`] = `"1"`;

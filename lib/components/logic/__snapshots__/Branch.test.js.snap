@@ -16,7 +16,3 @@ exports[`should render first Path (2) with true condition in Branch 1`] = `"2"`;
 exports[`should render no Paths because none match 1`] = `null`;
 
 exports[`should render no Paths because none match when taking every path 1`] = `null`;
-
-exports[`should render nothing when children are undefined 1`] = `null`;
-
-exports[`should render nothing when children are undefined and taking every path 1`] = `null`;

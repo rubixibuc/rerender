@@ -70,6 +70,14 @@ This library is under active development and more utility components will be dev
 </R.Reduce>
 ```
 
+##### Find
+
+```jsx harmony
+<R.Find>
+
+</R.Find>
+```
+
 ### Logic
 
 ##### Branch
