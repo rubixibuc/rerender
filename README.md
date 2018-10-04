@@ -17,9 +17,9 @@ import React from 'react'
 import _ from 'lodash';
 
 const component = ({ items }) => (
-    <React.Fragment>
-      {_.map(items, (item) => <span>{item.name}</span>)}
-    </React.Fragment>
+  <React.Fragment>
+    {_.map(items, (item) => <span>{item.name}</span>)}
+  </React.Fragment>
 );
 ```
 ##### Something like this...
@@ -29,11 +29,9 @@ import React from 'react';
 import * as R from 'rerender';
 
 const component = ({ items }) => (
-    <React.Fragment>
-      <R.Map items={items}>
-          {item => <span>{item}</span>}
-      </R.Map>
-    </React.Fragment>
+  <R.Map items={items}>
+    {item => <span>{item}</span>}
+  </R.Map>
 );
 ```
 
