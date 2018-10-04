@@ -109,11 +109,11 @@ This library is under active development and more utility components will be dev
 
 ```jsx harmony
 <R.Match 
-  expression={bool | number | string | object | array}
+  expression={bool | number | string | object | array | () => (bool | number | string | object | array )}
   first={bool = true}
   matcher={(expression, value) => bool = (expression, value) => expresion === value}>
   <R.Test 
-    value={bool | number | string | object | array}>
+    value={bool | number | string | object | array | () => (bool | number | string | object | array )}>
       {node}
   </R.Test>
 </R.Match>
