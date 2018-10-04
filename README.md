@@ -4,6 +4,12 @@
 
 > Rerender is a set of pure components intent on replacing libraries such as lodash during rendering. It might be useful to think of it as recompose for render props.
 
+##### Installation
+
+```text
+npm install --save @rubixibuc/rerender
+```
+
 ##### Instead of...
 
 ```jsx harmony
@@ -11,9 +17,9 @@ import React from 'react'
 import _ from 'lodash';
 
 const component = ({ items }) => (
-    <React.Fragment>
-      {_.map(items, (item) => <span>{item.name}</span>)}
-    </React.Fragment>
+  <React.Fragment>
+    {_.map(items, (item) => <span>{item.name}</span>)}
+  </React.Fragment>
 );
 ```
 ##### Something like this...
@@ -23,11 +29,9 @@ import React from 'react';
 import * as R from 'rerender';
 
 const component = ({ items }) => (
-    <React.Fragment>
-      <R.Map items={items}>
-          {item => <span>{item}</span>}
-      </R.Map>
-    </React.Fragment>
+  <R.Map items={items}>
+    {item => <span>{item}</span>}
+  </R.Map>
 );
 ```
 
@@ -66,43 +70,51 @@ This library is under active development and more utility components will be dev
   initial={any = {}} 
   items={array} 
   reducer={(accumulator: any, currentValue: any, currentIndex: number, items: array) => accumulator: any}>
-    {any => node}
+    {(accumulator: any) => node}
 </R.Reduce>
+```
+
+##### Find
+
+```jsx harmony
+<R.Find
+  items={array}
+  predicate={func}>
+  {(found: any) => node}
+</R.Find>
 ```
 
 ### Logic
 
 ##### Branch
 
-*Can use any combination and any number of True, Both, or False child elements*
+* If first is true will only render first *Path* with truthy condition
+* If *condition* prop is not set will render regardless. Equivalent to else block in if statement
 
 ```jsx harmony
 <R.Branch 
-  condition={bool}>
-    <R.True>
-      {node}
-    </R.True>
-    <R.False>
-      {node}
-    </R.False>
-    <R.Both>
-      {node}
-    </R.Both>
+  first={bool = true}>
+  <R.Path
+    condition={bool | (any => bool) | undefined}>
+    {node}
+  </R.Path> 
 </R.Branch>
 ```
 
 ##### Match
 
-*Expressions can be matched multiple times*
+* If first is true will only render first *Test* with *value* matching *expression*
 
 ```jsx harmony
 <R.Match 
-  expression={number | string | object | array}>
+  expression={bool | number | string | object | array | () => (bool | number | string | object | array )}
+  first={bool = true}
+  matcher={(expression, value) => bool = (expression, value) => expresion === value}>
   <R.Test 
-    value={number | string | object | array}>
+    value={bool | number | string | object | array | () => (bool | number | string | object | array )}>
       {node}
   </R.Test>
 </R.Match>
 ```
 
-**Composing these components is the whole idea! More are coming!**
+**Nesting these components is the whole idea! More are coming!**
