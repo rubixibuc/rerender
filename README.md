@@ -96,10 +96,10 @@ This library is under active development and more utility components will be dev
 ```jsx harmony
 <R.Branch 
   first={bool = true}>
-  <Path
+  <R.Path
     condition={bool | (any => bool) | undefined}>
     {node}
-  </Path> 
+  </R.Path> 
 </R.Branch>
 ```
 
