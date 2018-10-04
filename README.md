@@ -2,6 +2,10 @@
  
 ## React utility component library
 
+```text
+npm install --save @rubixibuc/rerender
+```
+
 > Rerender is a set of pure components intent on replacing libraries such as lodash during rendering. It might be useful to think of it as recompose for render props.
 
 ##### Instead of...
