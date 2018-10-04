@@ -1,8 +1,4 @@
 # Rerender
-
-```text
-npm install --save @rubixibuc/rerender
-```
  
 ## React utility component library
 
@@ -33,6 +29,12 @@ const component = ({ items }) => (
       </R.Map>
     </React.Fragment>
 );
+```
+
+##### Installation
+
+```text
+npm install --save @rubixibuc/rerender
 ```
 
 ##### Reasoning
