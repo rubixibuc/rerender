@@ -84,8 +84,8 @@ This library is under active development and more utility components will be dev
 
 ##### Branch
 
-* If first is true will only render first Path with truthy condition
-* If condition prop is not set will render regardless. Equivalent to else block in if statement
+* If first is true will only render first *Path* with truthy condition
+* If *condition* prop is not set will render regardless. Equivalent to else block in if statement
 
 ```jsx harmony
 <R.Branch 
@@ -99,7 +99,7 @@ This library is under active development and more utility components will be dev
 
 ##### Match
 
-* If first is true will only render first Test with value matching expression
+* If first is true will only render first *Test* with *value* matching *expression*
 
 ```jsx harmony
 <R.Match 
