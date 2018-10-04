@@ -76,7 +76,7 @@ This library is under active development and more utility components will be dev
 <R.Find
   items={array}
   predicate={func}>
-  {any => node}
+  {(found: any) => node}
 </R.Find>
 ```
 
