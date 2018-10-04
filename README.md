@@ -113,4 +113,4 @@ This library is under active development and more utility components will be dev
 </R.Match>
 ```
 
-**Composing these components is the whole idea! More are coming!**
+**Nesting these components is the whole idea! More are coming!**
