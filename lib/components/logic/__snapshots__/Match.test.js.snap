@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Test (2) matching value expression using matcher 1`] = `"2"`;
+exports[`should render Test (2) matching value and expression using matcher 1`] = `"2"`;
 
 exports[`should render Test (2) with function matching null expression 1`] = `"2"`;
 
@@ -11,16 +11,16 @@ Array [
 ]
 `;
 
-exports[`should render all Test(s) (2, 3) with value matching expression function 1`] = `
+exports[`should render all Test(s) (2, 3) with value matching expression 1`] = `
 Array [
   "2",
   "3",
 ]
 `;
 
-exports[`should render all Test(s) (3, 4) with value matching expression 1`] = `
+exports[`should render all Test(s) (2, 3) with value matching expression function 1`] = `
 Array [
+  "2",
   "3",
-  "4",
 ]
 `;
