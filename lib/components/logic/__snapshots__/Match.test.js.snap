@@ -1,16 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Tests (1) with matching value when value is function 1`] = `"1"`;
+exports[`should render all Test(s) (2) with function matching null expression 1`] = `"2"`;
 
-exports[`should render all Tests (1, 4) with matching value 1`] = `
+exports[`should render all Test(s) (2, 3) with value function matching expression 1`] = `
 Array [
-  "1",
-  "4",
+  "2",
+  "3",
 ]
 `;
 
-exports[`should render matching Test (1) when Match expression is function 1`] = `"1"`;
+exports[`should render all Test(s) (2, 3) with value matching expression function 1`] = `
+Array [
+  "2",
+  "3",
+]
+`;
 
-exports[`should render matching Test (2) when Match expression is null 1`] = `"2"`;
-
-exports[`should render only first Test (1) with matching value 1`] = `"1"`;
+exports[`should render all Test(s) (3, 4) with value matching expression 1`] = `
+Array [
+  "3",
+  "4",
+]
+`;
