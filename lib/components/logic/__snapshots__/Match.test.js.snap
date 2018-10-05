@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render Test (2) matching value and expression strictly by default 1`] = `"2"`;
+
 exports[`should render Test (2) matching value and expression using matcher 1`] = `"2"`;
 
 exports[`should render Test (2) with function matching null expression 1`] = `"2"`;
