@@ -1,18 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Path (3) with no condition because all other Path conditions are false 1`] = `"3"`;
-
-exports[`should render all Paths (2, 3) with true condition in Branch 1`] = `
+exports[`should render all True child components when condition function returns true 1`] = `
 Array [
-  "2",
-  "3",
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
 ]
 `;
 
-exports[`should render first Path (2) with function condition returning true in Branch 1`] = `"2"`;
+exports[`should render all True child components when condition is true 1`] = `
+Array [
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+  <div>
+    true
+  </div>,
+]
+`;
 
-exports[`should render first Path (2) with true condition in Branch 1`] = `"2"`;
+exports[`should render all false child components when condition function returns false 1`] = `
+Array [
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+]
+`;
 
-exports[`should render no Paths because none match 1`] = `null`;
+exports[`should render all false child components when condition is false 1`] = `
+Array [
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+  <div>
+    false
+  </div>,
+]
+`;
 
-exports[`should render no Paths because none match when taking every path 1`] = `null`;
+exports[`should render nothing when Branch contains no True or False children and condition is false 1`] = `null`;
+
+exports[`should render nothing when Branch contains one False child and condition is true 1`] = `null`;
+
+exports[`should render nothing when Branch contains one True child and condition is false 1`] = `null`;
