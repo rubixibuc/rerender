@@ -88,16 +88,17 @@ This library is under active development and more utility components will be dev
 
 ##### Branch
 
-* If first is true will only render first *Path* with truthy condition
-* If *condition* prop is not set will render regardless. Equivalent to else block in if statement
+* If condition resolves to true, all child *True* nodes will be rendered. Otherwise, all child *False* nodes will be rendered.
 
 ```jsx harmony
 <R.Branch 
-  first={bool = true}>
-  <R.Path
-    condition={bool | (any => bool) | undefined}>
+  condition={bool | () => bool}>
+  <R.True>
     {node}
-  </R.Path> 
+  </R.True>
+  <R.False>
+    {node}
+  </R.False>
 </R.Branch>
 ```
 
