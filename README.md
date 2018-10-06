@@ -103,15 +103,12 @@ This library is under active development and more utility components will be dev
 
 ##### Match
 
-* If first is true will only render first *Test* with *value* matching *expression*
-
 ```jsx harmony
 <R.Match 
-  expression={bool | number | string | object | array | () => (bool | number | string | object | array )}
-  first={bool = true}
+  expression={any}
   matcher={(expression, value) => bool = (expression, value) => expresion === value}>
   <R.Test 
-    value={bool | number | string | object | array | () => (bool | number | string | object | array )}>
+    value={any}>
       {node}
   </R.Test>
 </R.Match>
