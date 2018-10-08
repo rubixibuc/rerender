@@ -104,15 +104,14 @@ This library is under active development and more utility components will be dev
 
 ##### Match
 
-* If first is true will only render first *Test* with *value* matching *expression*
+* Matcher is used to compare *expression* and *Test* children's *value* properties. All children for which it returns true will be rendered. 
 
 ```jsx harmony
 <R.Match 
-  expression={bool | number | string | object | array | () => (bool | number | string | object | array )}
-  first={bool = true}
+  expression={any}
   matcher={(expression, value) => bool = (expression, value) => expresion === value}>
   <R.Test 
-    value={bool | number | string | object | array | () => (bool | number | string | object | array )}>
+    value={any}>
       {node}
   </R.Test>
 </R.Match>
