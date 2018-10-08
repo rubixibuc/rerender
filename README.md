@@ -103,6 +103,8 @@ This library is under active development and more utility components will be dev
 
 ##### Match
 
+* Matcher is used to compare *expression* and *Test* children's *value* properties. All children for which it returns true will be rendered. 
+
 ```jsx harmony
 <R.Match 
   expression={any}
