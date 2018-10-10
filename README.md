@@ -108,10 +108,10 @@ This library is under active development and more utility components will be dev
 
 ```jsx harmony
 <R.Match 
-  expression={any}
+  expression={any | () => any}
   matcher={(expression, value) => bool = (expression, value) => expresion === value}>
   <R.Test 
-    value={any}>
+    value={any | () => any}>
       {node}
   </R.Test>
 </R.Match>
