@@ -5,7 +5,7 @@
   "main": "dist/rerender.js",
   "scripts": {
     "test": "jest --coverage",
-    "prettier": "prettier --write './lib/**/*.js' webpack.config.js",
+    "prettier": "prettier --write \"./lib/**/*.js\" webpack.config.js",
     "build": "webpack --mode=production"
   },
   "repository": {
@@ -28,8 +28,8 @@
     "babel-loader": "^8.0.2",
     "jest": "^23.6.0",
     "prettier": "^1.14.3",
-    "react": "^16.5.2",
-    "react-test-renderer": "^16.5.2",
+    "react": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-node-externals": "^1.7.2"
@@ -38,7 +38,7 @@
     "prop-types": "^15.6.2"
   },
   "peerDependencies": {
-    "react": "^16.5.2"
+    "react": "^16.0.0"
   },
   "files": [
     "dist/rerender.js"
