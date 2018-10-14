@@ -6,6 +6,13 @@ exports[`should render Test (2) matching value and expression using matcher 1`] 
 
 exports[`should render Test (2) with function matching null expression 1`] = `"2"`;
 
+exports[`should render Tests (2, 3) matching value and expression using deep equality matcher 1`] = `
+Array [
+  "2",
+  "3",
+]
+`;
+
 exports[`should render all Test(s) (2, 3) with value function matching expression 1`] = `
 Array [
   "2",
