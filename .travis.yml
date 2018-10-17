@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "8"
+before_deploy: npm run build
+deploy:
+  provider: npm
+  email: rubixibuc@gmail.com
+  api_key:
+    secure: HrVRVSUkt2VDkbscO8Bg58gfQB3FAZy5vTJNrWTMYRP05NtwrKPJWeNSXsebg0BdCALyYfZ9iX3Nn9rJxFtAGQ+f9dC+M8pd6WnfLUwWu4Nmxl8qDIDzSrN0ahcLaubA9gzeL7EB2EWnRlZ848pbf+uaNaS53bxFZPCpY/WFLkUHf9+A3imE+6ak5CNFFRdIIHiGNs0Fua7+nytQ1jdDQ7Q3DU3p0KzAVak/0f/nosFDYrvQAaGWNFLYhon7j+MgFuGIqYUrZ6vFw4iiH7WYOkyDkD0SK/39ijbEY6HWt6ymdIOGd9L/kkmkPr4Q5HORLQwVVlEMXJG7Qxol64Er8Fjf0U62NVunkutcpHPxCOGc/K5MsYDdKoptlO52imdqW4BQbbexyrFSB7u9Y7b5kfvjoYrWIu4pHrTCMDH4WeptpFoh0pYMOsB2wGMVh8fQ1OErV2ASPoJLWBampH0H/PKERCJ+cpTolCACoDUnjD/zvyv5jdFKdSE5Bzo9sHtFSChp43uEJXJNJfKCawMh0zxigWaJOmwdJ0CSbNZKiTHA7F0YX21EyN8UMYkJrBoc6L19/XdiKQZwkGlLsOfolMadpIetWL/HlcIcn9SZyd3+Ga822PsgBXNuSQ3YHqWzelNSPzzk1Cc8Ld88n3N4NH8VY03mSt2Hp5cEOtFqJ90=
+  on:
+    tags: true
+    repo: rubixibuc/rerender
+  skip_cleanup: true
