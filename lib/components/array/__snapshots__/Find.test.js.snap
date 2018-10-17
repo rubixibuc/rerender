@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render empty div if no items match 1`] = `<div />`;
+
+exports[`should render empty div when items is empty 1`] = `<div />`;
+
 exports[`should render first item that matches 1`] = `
 <div>
   2
 </div>
 `;
-
-exports[`should render nothing if no items match 1`] = `null`;
-
-exports[`should render nothing when items is empty 1`] = `null`;
 
 exports[`should render nothing when items is null 1`] = `null`;
 
