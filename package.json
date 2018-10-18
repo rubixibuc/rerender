@@ -4,7 +4,7 @@
   "description": "React utiltiy component library",
   "main": "dist/rerender.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "prettier": "prettier --write \"./lib/**/*.js\" webpack.config.js",
     "build": "webpack --mode=production"
   },
@@ -26,6 +26,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.2",
+    "coveralls": "^3.0.2",
     "jest": "^23.6.0",
     "prettier": "^1.14.3",
     "react": "^16.0.0",

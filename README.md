@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rubixibuc/rerender.svg?branch=master)](https://travis-ci.org/rubixibuc/rerender) [![Coverage Status](https://coveralls.io/repos/github/rubixibuc/rerender/badge.svg?branch=master)](https://coveralls.io/github/rubixibuc/rerender?branch=master)
+
 # Rerender
  
 ## React utility component library
