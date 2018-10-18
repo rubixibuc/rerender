@@ -5,7 +5,7 @@
   "main": "dist/rerender.js",
   "scripts": {
     "test": "jest --coverage",
-    "prettier": "prettier --write './lib/**/*.js' webpack.config.js",
+    "prettier": "prettier --write \"./lib/**/*.js\" webpack.config.js",
     "build": "webpack --mode=production"
   },
   "repository": {
