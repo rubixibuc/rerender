@@ -5,7 +5,7 @@
   "main": "dist/rerender.js",
   "scripts": {
     "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
-    "test-dev": "jest --coverage",
+    "testDev": "jest --coverage",
     "prettier": "prettier --write \"./lib/**/*.js\" webpack.config.js",
     "build": "webpack --mode=production"
   },
