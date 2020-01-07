@@ -1,6 +1,6 @@
 {
   "name": "@rubixibuc/rerender",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "React utiltiy component library",
   "main": "dist/rerender.js",
   "scripts": {
